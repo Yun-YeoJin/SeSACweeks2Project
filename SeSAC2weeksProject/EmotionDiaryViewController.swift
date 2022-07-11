@@ -4,7 +4,6 @@ import UIKit
 
 class EmotionDiaryViewController: UIViewController {
     
-
     var a = 0
     var b = 0
     var c = 0
@@ -75,6 +74,7 @@ class EmotionDiaryViewController: UIViewController {
         Text(depressLabel, "우울해 \(i)")
     }
 
+  
 
 
 }
