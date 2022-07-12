@@ -4,7 +4,6 @@ import UIKit
 
 class EmotionDiaryViewController: UIViewController {
 
-    
     @IBOutlet weak var happyLabel: UILabel!
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var loveLabel: UILabel!
@@ -15,14 +14,22 @@ class EmotionDiaryViewController: UIViewController {
     @IBOutlet weak var boringLabel: UILabel!
     @IBOutlet weak var depressLabel: UILabel!
     
+    @IBOutlet var emotionLabelCollection: [UILabel]!
+    
+    @IBOutlet var emotionButtonCollection: [UIButton]!
     
     @IBOutlet weak var emotionFirstButton: UIButton!
     
-    var emotionArray = [0,0,0,0,0,0,0,0,0]
+    var EmotionCountArray = [0,0,0,0,0,0,0,0,0]
+    let LabelCollection = ["행복해", "좋아해", "사랑해", "당황해", "속상해", "피곤해", "지루해", "심심해", "우울해"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ButtonImage()
+        Labeltag()
+        ButtonLabel()
+        
         emotionFirstButton.tag = 0
         
         // 버튼 이미지 코드로 삽입하는 방법
@@ -41,28 +48,47 @@ class EmotionDiaryViewController: UIViewController {
         
     }
     
-    // 배경색, 레이블, 이미지 (튜플) - exampleCode() -> (0, 1, 2)
-    func exampleCode() -> (UIColor, String, String){
-        let color: [UIColor] = [.red, .blue, .brown, .yellow]
-        let someImage: [String] = ["sesac_slime1", "sesac_slime2", "sesac_slime3", "sesac_slime4"]
-        
-        return (color.randomElement()!, "윤기사", someImage.randomElement()!) //Return이 마지막 동작.
-    }
+        // 배경색, 레이블, 이미지 (튜플) - exampleCode() -> (0, 1, 2)
+        func exampleCode() -> (UIColor, String, String){
+            let color: [UIColor] = [.red, .blue, .brown, .yellow]
+            let someImage: [String] = ["sesac_slime1", "sesac_slime2", "sesac_slime3", "sesac_slime4"]
+            
+            return (color.randomElement()!, "윤기사", someImage.randomElement()!) //Return이 마지막 동작.
+        }
     
-    func setUserNickName() -> String {
+        func setUserNickName() -> String {
 
-        let nickname = ["행복해", "좋아해", "사랑해"]
-        let select = nickname.randomElement()!
+            let nickname = ["행복해", "좋아해", "사랑해"]
+            let select = nickname.randomElement()!
 
-       // happyLabel.text = "\(select)"
-        return "\(select)"
+        // happyLabel.text = "\(select)"
+            return "\(select)"
 
-    }
+        }
     
-    // Label 이름 설정
+        // Label 이름 설정
         func Text(_ LabelFeeling: UILabel, _ LabelName: String) {
             LabelFeeling.text = "\(LabelName)"
     }
+    
+        func ButtonImage() {
+        for buttonimage in 0...emotionButtonCollection.count - 1 {
+            emotionButtonCollection[buttonimage].setImage(UIImage(named: "sesac_slime\(buttonimage+1)"), for: .normal)
+        }
+     }
+        func Labeltag() {
+            for Tag in 0...emotionButtonCollection.count - 1{
+                emotionButtonCollection[Tag].tag = Tag
+            }
+        }
+        func ButtonLabel() {
+            for item in 0...emotionButtonCollection.count - 1{
+                emotionLabelCollection[item].text = LabelCollection[item]
+                emotionLabelCollection[item].textColor = .blue
+                emotionLabelCollection[item].textAlignment = .center
+            }
+        }
+    
         func showAlertController() {
         // 1. 흰 바탕: UIAlertController (UIAlertController: UIViewController 자동으로 상속받음)
         // actionSheet와 alert 2가지 종류가 있음
@@ -81,48 +107,27 @@ class EmotionDiaryViewController: UIViewController {
         alert.addAction(okButton)
         
         // 4. present : 화면 띄우기
-        present(alert, animated: true, completion: nil)
+        //  present(alert, animated: true, completion: nil)
     }
     
-    // tag를 이용한 설정 & alert 띄우기
-    @IBAction func happyButton(_ sender: UIButton) {
-        emotionArray[sender.tag] += 1
-        happyLabel.text = "행복해 \(emotionArray[0])"
-       
-        // showAlertController()
-            }
+//      tag를 이용한 설정 & alert 띄우기
     
-    @IBAction func likeButton(_ sender: UIButton) {
-        emotionArray[sender.tag] += 1
-        likeLabel.text = "좋아해 \(emotionArray[1])"
-    }
-    @IBAction func loveButton(_ sender: UIButton) {
-        emotionArray[sender.tag] += 1
-        loveLabel.text = "사랑해 \(emotionArray[2])"
-    }
-    @IBAction func panicButton(_ sender: UIButton) {
-        emotionArray[sender.tag] += 1
-        panicLabel.text = "실망해 \(emotionArray[3])"
-    }
-    @IBAction func upsetButton(_ sender: UIButton) {
-        emotionArray[sender.tag] += 1
-        upsetLabel.text = "당황해 \(emotionArray[4])"
-    }
-    @IBAction func tiredButton(_ sender: UIButton) {
-        emotionArray[sender.tag] += 1
-        tiredLabel.text = "피곤해 \(emotionArray[5])"
-    }
-    @IBAction func lazyButton(_ sender: UIButton) {
-        emotionArray[sender.tag] += 1
-        lazyLabel.text = "지루해 \(emotionArray[6])"
-    }
-    @IBAction func boringButton(_ sender: UIButton) {
-        emotionArray[sender.tag] += 1
-        boringLabel.text = "심심해 \(emotionArray[7])"
-    }
-    @IBAction func depressedButton(_ sender: UIButton) {
-        emotionArray[sender.tag] += 1
-        depressLabel.text = "우울해 \(emotionArray[8])"
-    }
+//    @IBAction func happyButton(_ sender: UIButton) {
+//        EmotionCountArray[sender.tag] += 1
+//        happyLabel.text = "행복해 \(EmotionCountArray[0])"
+//
+//        // showAlertController()
+//            }
 
+
+    @IBAction func EmotionButtonClicked(_ sender: UIButton) {
+        
+        EmotionCountArray[sender.tag] += 1
+        emotionLabelCollection[sender.tag].text = "\(LabelCollection[sender.tag]) \(String(EmotionCountArray[sender.tag]))"
+        emotionLabelCollection[sender.tag].textAlignment = .center
+        
+    }
+    
+    
 }
+

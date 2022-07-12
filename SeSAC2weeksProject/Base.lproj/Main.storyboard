@@ -35,7 +35,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="sesac_slime1"/>
                                                 <connections>
-                                                    <action selector="happyButton:" destination="nIW-aA-2V1" eventType="touchUpInside" id="9RZ-6o-6sZ"/>
+                                                    <action selector="EmotionButtonClicked:" destination="nIW-aA-2V1" eventType="touchUpInside" id="UHd-gM-vAT"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3G-KA-zy2">
@@ -56,7 +56,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="sesac_slime4"/>
                                                 <connections>
-                                                    <action selector="panicButton:" destination="nIW-aA-2V1" eventType="touchUpInside" id="gaw-YI-RS0"/>
+                                                    <action selector="EmotionButtonClicked:" destination="nIW-aA-2V1" eventType="touchUpInside" id="Era-Eh-7gV"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당황해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMd-18-hPY">
@@ -77,7 +77,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="sesac_slime7"/>
                                                 <connections>
-                                                    <action selector="lazyButton:" destination="nIW-aA-2V1" eventType="touchUpInside" id="uLa-BR-XZX"/>
+                                                    <action selector="EmotionButtonClicked:" destination="nIW-aA-2V1" eventType="touchUpInside" id="aBu-WJ-JmX"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지루해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24i-cB-SVE">
@@ -103,7 +103,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="sesac_slime2"/>
                                                 <connections>
-                                                    <action selector="likeButton:" destination="nIW-aA-2V1" eventType="touchUpInside" id="QMA-5Y-l0d"/>
+                                                    <action selector="EmotionButtonClicked:" destination="nIW-aA-2V1" eventType="touchUpInside" id="6U0-0a-Ke2"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFw-5d-a8F">
@@ -124,7 +124,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="sesac_slime5"/>
                                                 <connections>
-                                                    <action selector="upsetButton:" destination="nIW-aA-2V1" eventType="touchUpInside" id="w5g-vX-AoR"/>
+                                                    <action selector="EmotionButtonClicked:" destination="nIW-aA-2V1" eventType="touchUpInside" id="4ud-ef-rqi"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="속상해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O48-Q1-ZIL">
@@ -145,7 +145,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="sesac_slime8"/>
                                                 <connections>
-                                                    <action selector="boringButton:" destination="nIW-aA-2V1" eventType="touchUpInside" id="zkN-OP-pWE"/>
+                                                    <action selector="EmotionButtonClicked:" destination="nIW-aA-2V1" eventType="touchUpInside" id="gKL-rv-GHM"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="심심해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cL-aW-71J">
@@ -171,7 +171,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="sesac_slime3"/>
                                                 <connections>
-                                                    <action selector="loveButton:" destination="nIW-aA-2V1" eventType="touchUpInside" id="0X3-i7-oFw"/>
+                                                    <action selector="EmotionButtonClicked:" destination="nIW-aA-2V1" eventType="touchUpInside" id="Enu-HZ-bVX"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사랑해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svy-Qe-Nxw">
@@ -192,7 +192,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="sesac_slime6"/>
                                                 <connections>
-                                                    <action selector="tiredButton:" destination="nIW-aA-2V1" eventType="touchUpInside" id="Far-yD-H1t"/>
+                                                    <action selector="EmotionButtonClicked:" destination="nIW-aA-2V1" eventType="touchUpInside" id="dEo-fo-eGG"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="피곤해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i43-hF-f0l">
@@ -213,7 +213,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="sesac_slime9"/>
                                                 <connections>
-                                                    <action selector="depressedButton:" destination="nIW-aA-2V1" eventType="touchUpInside" id="uc4-UI-PLO"/>
+                                                    <action selector="EmotionButtonClicked:" destination="nIW-aA-2V1" eventType="touchUpInside" id="z32-NW-iPd"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="우울해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bp-Lg-UtQ">
@@ -269,6 +269,24 @@
                         <outlet property="panicLabel" destination="IMd-18-hPY" id="VBJ-9n-P15"/>
                         <outlet property="tiredLabel" destination="i43-hF-f0l" id="8nw-sT-J0G"/>
                         <outlet property="upsetLabel" destination="O48-Q1-ZIL" id="t3R-Ea-2y5"/>
+                        <outletCollection property="emotionLabelCollection" destination="A3G-KA-zy2" collectionClass="NSMutableArray" id="Qdc-LA-pe8"/>
+                        <outletCollection property="emotionLabelCollection" destination="KFw-5d-a8F" collectionClass="NSMutableArray" id="wAH-zJ-jG3"/>
+                        <outletCollection property="emotionLabelCollection" destination="Svy-Qe-Nxw" collectionClass="NSMutableArray" id="V67-VS-6qI"/>
+                        <outletCollection property="emotionLabelCollection" destination="IMd-18-hPY" collectionClass="NSMutableArray" id="9r3-7T-tXW"/>
+                        <outletCollection property="emotionLabelCollection" destination="O48-Q1-ZIL" collectionClass="NSMutableArray" id="abv-Cw-XC2"/>
+                        <outletCollection property="emotionLabelCollection" destination="i43-hF-f0l" collectionClass="NSMutableArray" id="ua8-RO-FcH"/>
+                        <outletCollection property="emotionLabelCollection" destination="24i-cB-SVE" collectionClass="NSMutableArray" id="QFF-yc-VDW"/>
+                        <outletCollection property="emotionLabelCollection" destination="9cL-aW-71J" collectionClass="NSMutableArray" id="Ui2-jc-vWA"/>
+                        <outletCollection property="emotionLabelCollection" destination="2bp-Lg-UtQ" collectionClass="NSMutableArray" id="ZzQ-mN-JtY"/>
+                        <outletCollection property="emotionButtonCollection" destination="HKb-eS-pHC" collectionClass="NSMutableArray" id="zKM-bA-6CW"/>
+                        <outletCollection property="emotionButtonCollection" destination="DwK-qg-bfN" collectionClass="NSMutableArray" id="3OD-E8-tfa"/>
+                        <outletCollection property="emotionButtonCollection" destination="XQA-3y-pe2" collectionClass="NSMutableArray" id="nYu-zr-sa5"/>
+                        <outletCollection property="emotionButtonCollection" destination="cIg-0l-N0J" collectionClass="NSMutableArray" id="EBe-MZ-c81"/>
+                        <outletCollection property="emotionButtonCollection" destination="Zr3-n2-sTT" collectionClass="NSMutableArray" id="LAP-if-b0t"/>
+                        <outletCollection property="emotionButtonCollection" destination="Qn3-WW-nAI" collectionClass="NSMutableArray" id="Zga-fi-qaO"/>
+                        <outletCollection property="emotionButtonCollection" destination="OC2-AL-z0M" collectionClass="NSMutableArray" id="sYY-S7-Yss"/>
+                        <outletCollection property="emotionButtonCollection" destination="mNP-HZ-Vg8" collectionClass="NSMutableArray" id="FoQ-fw-qMJ"/>
+                        <outletCollection property="emotionButtonCollection" destination="Y1J-XP-S4c" collectionClass="NSMutableArray" id="NHw-Qm-ZYw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XwU-nX-acy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
