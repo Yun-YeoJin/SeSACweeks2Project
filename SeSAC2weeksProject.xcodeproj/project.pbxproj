@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE973E3C287D213E00087399 /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE973E3B287D213E00087399 /* SegmentViewController.swift */; };
 		AEB624C6287BA3E500E8AF10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB624C5287BA3E500E8AF10 /* AppDelegate.swift */; };
 		AEB624C8287BA3E500E8AF10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB624C7287BA3E500E8AF10 /* SceneDelegate.swift */; };
 		AEB624CA287BA3E500E8AF10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB624C9287BA3E500E8AF10 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE973E3B287D213E00087399 /* SegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 		AEB624C2287BA3E500E8AF10 /* SeSAC2weeksProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC2weeksProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB624C5287BA3E500E8AF10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEB624C7287BA3E500E8AF10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				AEB624C7287BA3E500E8AF10 /* SceneDelegate.swift */,
 				AEB624C9287BA3E500E8AF10 /* ViewController.swift */,
 				AEB624D9287C07F400E8AF10 /* EmotionDiaryViewController.swift */,
+				AE973E3B287D213E00087399 /* SegmentViewController.swift */,
 				AEB624CB287BA3E500E8AF10 /* Main.storyboard */,
 				AEB624CE287BA3E700E8AF10 /* Assets.xcassets */,
 				AEB624D0287BA3E700E8AF10 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				AEB624DA287C07F400E8AF10 /* EmotionDiaryViewController.swift in Sources */,
 				AEB624CA287BA3E500E8AF10 /* ViewController.swift in Sources */,
+				AE973E3C287D213E00087399 /* SegmentViewController.swift in Sources */,
 				AEB624C6287BA3E500E8AF10 /* AppDelegate.swift in Sources */,
 				AEB624C8287BA3E500E8AF10 /* SceneDelegate.swift in Sources */,
 			);
